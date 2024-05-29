@@ -5,8 +5,10 @@ import { Link } from 'react-router-dom';
 const CartPage: React.FC = () => {
   return (
     <div className="cart-page">
-      <Link to="/" className="back-button">Voltar</Link>
-      <h1>Carrinho</h1>
+      <div className='head-cart-page'>
+        <Link to="/" className="back-button">Voltar</Link>
+        <h1>Carrinho</h1>
+      </div>
       <Cart />
     </div>
   );

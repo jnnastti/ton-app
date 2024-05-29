@@ -1,6 +1,6 @@
 import React from 'react';
 import { useCart } from '../contexts/CartContext';
-// import './css/Cart.css';
+import './css/Cart.css';
 
 interface Product {
     id: number;
@@ -33,17 +33,19 @@ const Cart: React.FC = () => {
             className="cart-item-image"
           />
           <div className="cart-item-details">
-            <h2>{product.title}</h2>
-            <p>${product.price} x {product.quantity}</p>
-            <p>Total: ${calculateProductTotal(product)}</p>
+            <div>
+              <h2>{product.title}</h2>
+              <p>${product.price} x {product.quantity}</p>
+              <p>Total: ${calculateProductTotal(product)}</p>
+            </div>
             <button className="remove-from-cart-button" onClick={() => removeFromCart(product.id)}>
-            Remove
+            Remover
           </button>
           </div>
         </div>
       ))}
       <div className="cart-total">
-        <h2>Total do Carrinho: ${cartTotal}</h2>
+        <h2>Total do Carrinho: ${cartTotal.toFixed(2)}</h2>
       </div>
     </div>
   );

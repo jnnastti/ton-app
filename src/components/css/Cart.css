@@ -1,3 +1,19 @@
+.cart-page {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #cacaca;
+  padding: 2rem;
+}
+
+.head-cart-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .cart {
     display: flex;
     flex-direction: column;
@@ -6,18 +22,33 @@
   .cart-item {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-bottom: 1rem;
+    background-color: #eeeeee;
+    border-radius: 20px;
+    padding: 10px 20px;
   }
   
   .cart-item-image {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    margin-right: 1rem;
+    width: 150px;
+    height: 150px; 
+    margin-right: 2rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
   }
   
   .cart-item-details {
     flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Josefin Sans", sans-serif;
+  }
+
+  .cart-item-details h2 {
+    font-family: "Yanone Kaffeesatz", sans-serif;
   }
   
   .remove-from-cart-button {
@@ -27,9 +58,20 @@
     padding: 0.5rem 1rem;
     cursor: pointer;
     border-radius: 4px;
+    transition: 0.3s all;
   }
   
   .remove-from-cart-button:hover {
     background-color: #c82333;
   }
   
+  .back-button {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: #888;
+    font-family: "Josefin Sans", sans-serif;
+    transition: all 0.3s;
+  }
