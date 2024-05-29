@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: #E0B96D;
+    background-color: #cacaca;
+    padding: 2rem;
   }
   

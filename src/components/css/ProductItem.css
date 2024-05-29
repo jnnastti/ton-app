@@ -1,41 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Audrey+Muli&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
 
 .product-item {
     border: none;
     border-radius: 10px;
     padding: 1rem;
     text-align: center;
-    margin: 1rem;
-    background-color: #935218;
-    max-width: 150px;
-    max-height: 150px;
+    margin: 2rem 1rem;
+    width: 250px;
+    height: 275px;
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
   }
   
-  /* .product-image {
-    width: 100%;
-    /* /height: auto; 
-    object-fit: cover;
-  } */
+  .product-image {
+    width: 150px;
+    height: 150px; 
+    margin-top: -3rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+
+  } 
   
   .product-title {
     font-size: 1.2rem;
-    margin: 0.5rem 0;
-    font-family: 'Audrey Muli', sans-serif;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-optical-sizing: auto;
   }
   
   .product-price {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #888;
+    margin: 0.1rem;
+    font-family: "Josefin Sans", sans-serif;
   }
   
   .add-to-cart-button {
+    border-radius: 100px;
     background-color: #28a745;
     color: white;
     border: none;
     padding: 0.5rem 1rem;
     cursor: pointer;
-    border-radius: 4px;
+    transition: all 0.3s;
     margin-top: 0.5rem;
   }
   
@@ -44,8 +54,13 @@
   }
 
 .product-quantity-input {
-  width: 60px;
-  margin-right: 10px;
+  width: 30px;
+  border: none;
+  padding: 4px;
+  background-color: #fff;
+  margin: 8px;
+  font-family: "Josefin Sans", sans-serif;
+
 }
 
   

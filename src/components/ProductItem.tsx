@@ -31,6 +31,8 @@ const ProductItem: React.FC<ProductProps> = ({ product }) => {
       <img src={product.image} alt={product.title} className="product-image" />
       <h2 className="product-title">{product.title}</h2>
       <p className="product-price">${product.price}</p>
+      
+      <div>
       <input
         type="number"
         value={quantity}
@@ -39,8 +41,9 @@ const ProductItem: React.FC<ProductProps> = ({ product }) => {
         min={1}
       />
       <button className="add-to-cart-button" onClick={handleAddToCart}>
-        Add to Cart
+        +
       </button>
+      </div>
     </div>
   );
 };
