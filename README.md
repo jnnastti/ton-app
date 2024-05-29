@@ -1,46 +1,61 @@
-# Getting Started with Create React App
+# Ton's Product Store
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto é um aplicativo de venda de produtos para o Ton, onde pode ser vendido qualquer tipo de produto que desejar. O objetivo deste desafio é avaliar o conhecimento geral de React, capacidade de explicar o código e entender a experiência do usuário.
 
-## Available Scripts
 
-In the project directory, you can run:
+## Funcionalidades
 
-### `npm start`
+- Lista de Produtos:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+    - Exibe uma lista de produtos carregados de um servidor público.
+    - Os usuários podem adicionar produtos ao carrinho clicando em um botão "+".
+    - Os usuários podem adicionar diferentes quantidades do produto.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Carrinho:
 
-### `npm test`
+    - Os usuários podem acessar o carrinho clicando em "Cart".
+    - Na tela do carrinho, os produtos adicionados ao carrinho são listados.
+    - Os usuários podem remover produtos do carrinho clicando em um botão "Remover".
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tecnologias Utilizadas
 
-### `npm run build`
+- React.js: Uma biblioteca JavaScript para construção de interfaces de usuário.
+- TypeScript: Um superset tipado de JavaScript.
+- Jest: Uma estrutura de teste de JavaScript.
+- React Testing Library: Uma biblioteca de testes para React.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Instalação
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Para executar este projeto localmente, siga estas etapas:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Certifique-se de ter o Node.js instalado em sua máquina. Você pode baixá-lo em [nodejs.org](https://nodejs.org/).
+2. Clone este repositório em sua máquina local:
 
-### `npm run eject`
+   ```bash
+   git clone https://github.com/jnnastti/ton-app.git
+   ```
+3. Navegue até o diretório do projeto:
 
-**Note: this is a one-way operation. Once you `eject`, you canâ€™t go back!**
+  ```bash
+   cd ton-app
+   ```
+4. Instale as dependências do projeto:
+  ```bash
+   npm install
+   ```
+5. Execute o servidor de desenvolvimento:
+  ```bash
+    npm start
+   ```
+O servidor será executado em http://localhost:3000.
 
-If you arenâ€™t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Testes:
+Para executar os testes unitários, utilize o seguinte comando:
+```bash
+   npm test
+   ```
+## Contribuindo:
+Se você encontrar um problema ou tiver sugestões para melhorar este projeto, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point youâ€™re on your own.
-
-You donâ€™t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldnâ€™t feel obligated to use this feature. However we understand that this tool wouldnâ€™t be useful if you couldnâ€™t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contatos:
+Para perguntas ou feedback, entre em contato através do email: janna.sangaletti6@gmail.com
