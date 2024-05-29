@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-    background-color: #f8f8f8;
+    padding: 0.5rem 2rem;
+    background-color: #49fd73;
+    font-family: "Yanone Kaffeesatz", sans-serif;
   }
   
   .cart-button {
@@ -11,16 +14,13 @@
     border: none;
     font-size: 1rem;
     cursor: pointer;
+    text-decoration: none;
+    color: #888;
+    font-family: "Josefin Sans", sans-serif;
+    transition: all 0.3s;
   }
-  
-  .cart-modal {
-    position: absolute;
-    top: 4rem;
-    right: 1rem;
-    width: 300px;
-    background-color: white;
-    border: 1px solid #ccc;
-    padding: 1rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  .cart-button:hover {
+    color: #464646;
   }
   
